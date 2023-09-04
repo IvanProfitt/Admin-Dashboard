@@ -1,0 +1,125 @@
+body{
+    display:flex;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-self:left;
+}
+.sidebarButton{
+    background-color: #0ea5e9 ;
+    color: #f0f9ff;
+    margin:5px;
+    border:none;
+    height:20px;
+    width:fit-content;
+    align-self: center;
+    border-radius:4px;
+
+
+}
+
+.star{
+    background: url("images/thumb-up-outline.svg") no-repeat;
+    cursor: pointer;
+    font-weight: bold;
+    border:none;
+    width:40px;
+    height:40px;
+    margin:10px;
+
+}
+
+.share{
+    background: url("images/share-variant.svg") no-repeat;
+    cursor: pointer;
+    font-weight: bold;
+    border:none;
+    width:40px;
+    height:40px;
+    margin:10px;
+
+}
+
+.watch{
+    background: url("images/eye-outline.svg") no-repeat;
+    cursor: pointer;
+    font-weight: bold;
+    border:none;
+    width:40px;
+    height:40px;
+    margin:10px;
+}
+
+.star:hover,.watch:hover,.share:hover{
+    background-color: lightblue;
+}
+
+.sidebarButton:hover{
+    background-color: #06b6d4;
+}
+
+.firstButtons{
+    margin-bottom:100px;
+    display: flex;
+    flex-direction: column;
+
+}
+.secondButtons{
+    display: flex;
+    flex-direction: column;     
+}
+
+
+.pageContent{
+    display:flex;
+}
+
+
+.topTopbar{
+    background-color:salmon;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottomTopbar{
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.topbar{
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+}
+
+.searchBar{
+    align-self: left;
+    border: 1px solid black;
+}
+.profileInfo{
+    align-self:right;
+    border: 1px solid red;
+}
+.mainContent{
+    border: 1px solid blue;
+
+}
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.projectDiv{
+    margin:10px;
+    border: 1px solid blueviolet;
+
+}
+.rightSidebar{
+    border: 1px solid aqua;
+}
