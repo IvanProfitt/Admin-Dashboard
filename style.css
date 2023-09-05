@@ -1,12 +1,32 @@
+@font-face {
+    font-family: "Monterey";
+    src: url("fonts/Switzer-Medium.otf");
+}
+html{
+    height:100%;
+    width: 100%;
+}
 body{
+    font-family: Monterey;
     display:flex;
+    width:100%;
+    background-color: #c7d2fe;
+    padding:0px;
+    margin:0px;
+    height:100%;
 }
 
 .sidebar{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     justify-self:left;
+    width: 50%;
+    height:100%;
+    background-color: #0ea5e9;
+}
+
+.sidebar h1{
+    color:white;
 }
 .sidebarButton{
     background-color: #0ea5e9 ;
@@ -21,41 +41,56 @@ body{
 
 }
 
-.star{
-    background: url("images/thumb-up-outline.svg") no-repeat;
+.star,.share,.watch{
     cursor: pointer;
     font-weight: bold;
     border:none;
     width:40px;
     height:40px;
     margin:10px;
+}
 
+.star:hover, .share:hover,.watch:hover{
+    opacity:.5;
+}
+
+.star{
+    background: url("images/thumb-up-outline.svg") no-repeat;
 }
 
 .share{
     background: url("images/share-variant.svg") no-repeat;
-    cursor: pointer;
-    font-weight: bold;
-    border:none;
-    width:40px;
-    height:40px;
-    margin:10px;
 
 }
 
 .watch{
     background: url("images/eye-outline.svg") no-repeat;
-    cursor: pointer;
-    font-weight: bold;
-    border:none;
-    width:40px;
-    height:40px;
-    margin:10px;
 }
 
-.star:hover,.watch:hover,.share:hover{
-    background-color: lightblue;
-}
+
+.buttonInput {
+    text-decoration: none; /* Remove default underline for links */
+  }
+  
+  .buttonDiv, .heading, .searchBar {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content */
+  }
+  
+  .buttonDiv img, .heading img{
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    margin-right: 20px; /* Add spacing between the image and paragraph */
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(161deg) brightness(105%) contrast(106%);
+  }
+
+  a:visited{
+    color:white;
+  }
+  a:hover{
+    background-color: #06b6d4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
 
 .sidebarButton:hover{
     background-color: #06b6d4;
@@ -78,11 +113,13 @@ body{
 }
 
 
+
 .topTopbar{
-    background-color:salmon;
     flex-direction: row;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    align-items:start;
 }
 
 .bottomTopbar{
@@ -92,23 +129,80 @@ body{
 
 }
 
+.splashInfo{
+    display: flex;
+}
+
+.profileText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.hello{
+    margin-bottom:5px;
+}
+
+.profileName{
+    margin:0px;
+}
+
 .topbar{
-    border:1px solid black;
     display:flex;
     flex-direction: column;
+    background-color:white;
 }
 
 .searchBar{
-    align-self: left;
-    border: 1px solid black;
+    margin:10px;
+    align-self: top;
+    justify-self: center;
+    width:100%;
+}
+
+.searchInput{
+    width: 100%;
+    background-color: #d4d4d8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.searchInput:hover{
+    background-color: #a1a1aa;
+
 }
 .profileInfo{
-    align-self:right;
-    border: 1px solid red;
+    align-self:top;
+    display: flex;
+
+}
+
+.notification{
+    margin:15px;
+}
+
+.profilePic{
+    margin:5px;
+}
+
+.profileInfo h2{
+    margin-top:15px;
+    margin-left:30px;
+}
+
+
+.topButtons{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
 }
 .mainContent{
-    border: 1px solid blue;
-
+    width:100%;
 }
 
 .projects{
@@ -116,10 +210,61 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 .projectDiv{
+    background-color: #818cf8;
     margin:10px;
-    border: 1px solid blueviolet;
+    border-left:5px #facc15 solid;
+    border-radius: 6px 0px 0px 6px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease;
+    
+
+}
+
+.projectDiv:hover{
+    background-color: #6366f1;
 
 }
 .rightSidebar{
-    border: 1px solid aqua;
+    padding:5px;
+}
+
+
+.profiles, .announcements{
+    background-color: #818cf8;
+    margin:25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
+.profiles{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.trendingProfile{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.trendingInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.trendingInfo p{
+    margin:3px;
+}
+
+
+.announcement{
+    padding:20px;
 }

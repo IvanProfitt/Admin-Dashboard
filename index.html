@@ -9,21 +9,67 @@
 <body>
     <div class="sidebar">
         <div class="heading">
-            <img>
+            <img src="images/view-dashboard.svg" width="60" height="60" alt="Home Icon">
             <h1>Dashboard</h1>
         </div>
         <div class="firstButtons">
-            <input type="button" class="sidebarButton" value="Home">
-            <input type="button" class="sidebarButton" value="Profile">
-            <input type="button" class="sidebarButton" value="Messages">
-            <input type="button" class="sidebarButton" value="History">
-            <input type="button" class="sidebarButton" value="Tasks">
-            <input type="button" class="sidebarButton" value="Communities">
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/home.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Home</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/card-account-details.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Profile</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/message.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Messages</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/clock-time-five.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">History</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/note-multiple-outline.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Tasks</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/home.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Communities</p>
+                </div>
+            </a>
         </div>
+
         <div class="secondButtons">
-            <input type="button" class="sidebarButton" value="Settings">
-            <input type="button" class="sidebarButton" value="Support">
-            <input type="button" class="sidebarButton" value="Privacy">
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/cog.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Settings</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/help-box.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Support</p>
+                </div>
+            </a>
+            <a href="" class="buttonInput">
+                <div class="buttonDiv">
+                    <img src="images/security.svg" width="30" height="30" alt="Home Icon" class="buttonImg">
+                    <p class="buttonText">Privacy</p>
+                </div>
+            </a>
         </div>
     </div>
     <div class="mainStuff">
@@ -31,21 +77,23 @@
         <div class="topbar">
             <div class="topTopbar">
                 <div class="searchBar">
-                    <img class="search">
-                    <input type="text">
+                    <img src="images/magnify.svg" width="30" height="30" alt="Home Icon" class="search">
+                    <input type="text" class="searchInput">
                 </div>
                 <div class="profileInfo">
-                    <img class="notification">
-                    <img class="profilePic">
+                    <img src="images/bell.svg" width="30" height="30" alt="Home Icon" class="notification">
+                    <img src="images/circle.svg" class="profilePic" width="50" height="50">
                     <h2 class="name">Ivan Profitt</h2>
                 </div>
             </div>
 
             <div class="bottomTopbar">
                 <div class="splashInfo">
-                    <img class="profile">
-                    <p>Hi there,</p>
-                    <h2>Ivan Profitt (@IvanProfitt)</h2>
+                    <img src="images/circle.svg" class="profile" width="100px">
+                    <div class="profileText">
+                        <p class="hello">Hi there,</p>
+                        <h2 class="profileName">Ivan Profitt (@IvanProfitt)</h2>
+                    </div>
                 </div>
 
                 <div class="topButtons">
@@ -59,6 +107,7 @@
    
         <div class="pageContent">
             <div class="mainContent">
+                <h2>Your projects</h2>
                 <div class="projects">
                     <div class="projectDiv">
                         <h2>Project 1</h2>
@@ -106,6 +155,7 @@
             </div>
 
             <div class="rightSidebar">
+                <h2>Announcements</h2>
                 <div class="announcements">
                     <div class="announcement">
                         <h3>Site Maintenance</h3>
@@ -122,25 +172,36 @@
                 </div>
 
                 <div class="trending">
-                    <div class="trendingProfile">
-                        <img>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
-                    </div>
-                    <div class="trendingProfile">
-                        <img>
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
-                    </div>
-                    <div class="trendingProfile">
-                        <img>
-                        <p>@kendall</p>
-                        <p>Life Changing App</p>
-                    </div>
-                    <div class="trendingProfile">
-                        <img>
-                        <p>@alex</p>
-                        <p>No Traffic Makerr</p>
+                    <h2>Trending</h2>
+                    <div class="profiles">
+                        <div class="trendingProfile">
+                            <img src="images/circle.svg" class="profile" width="50">
+                            <div class="trendingInfo">
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                                </div>
+                             </div>
+                        <div class="trendingProfile">
+                            <img src="images/circle.svg" class="profile" width="50">
+                            <div class="trendingInfo">
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                                </div>
+                        </div>
+                        <div class="trendingProfile">
+                            <img src="images/circle.svg" class="profile" width="50">
+                            <div class="trendingInfo">
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                                </div>
+                        </div>
+                        <div class="trendingProfile">
+                            <img src="images/circle.svg" class="profile" width="50">
+                            <div class="trendingInfo">
+                                <p>@alex</p>
+                                <p>No Traffic Makerr</p>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>
